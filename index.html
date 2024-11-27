@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Build a Rocket</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="rocket.png">
+    </head>
+    <body>
+        <div id="main">
+            <h1>Build a Rocket</h1>
+            <br />
+            <h3 id="company-name">Company Name: Unnamed</h3>
+            <button id="change-company-name" onclick="changeCompanyName()">Change Company Name</button>
+            <h3 id="altitude">Altitude: 0m</h3>
+            <h3 id="rocket-fuel-level">Rocket Fuel Level: 0</h3>
+            <button id="upgrade-rocket-fuel" onclick="upgradeRocketFuel()">Upgrade Rocket Fuel</button>
+            <h3 id="rocket-ai-level">Rocket AI Level: 0</h3>
+            <button id="upgrade-rocket-ai" onclick="upgradeRocketAI()">Upgrade Rocket AI</button>
+            <br /><br />
+            <button id="switch" onclick="onOff()">Turn on rocket AI</button>
+            <br />
+            <button id="go-higher" onclick="goHigher()" tabindex="-1"></button>
+            <br /><br />
+            <button id="achieve">Achievements</button>
+            <div id="achieve-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Achievements:</h1>
+                    <br />
+                    <h2 id="none">No achivements achieved</h2>
+                    <h2 id="moon">Past the Moon!</h2>
+                    <h2 id="mars">Past Mars!</h2>
+                </div>
+            </div>
+            <br /><br />
+            <h3 id="highest-altitude">Highest altitude: 1168060000m by Engineer Space Corp</h3>
+            <br />
+            <h3 id="version">V0.6</h3>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
